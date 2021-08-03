@@ -2,23 +2,49 @@
 
 
 def output_all_items(items):
-    pass  # TODO: replace this line with your code
+
+    for item in items:
+        print(item)
 
 
 def get_all_evens(nums):
-    pass  # TODO: replace this line with your code
+
+    even_nums = []
+
+    for num in nums:
+        if num % 2 == 0:
+            even_nums.append(num)
+
+    return even_nums
 
 
 def get_odd_indices(items):
-    pass  # TODO: replace this line with your code
+
+    result = []
+
+    for i in items:
+        if i % 2 != 0:
+            result.append(items[i])
+
+    return result
+
 
 
 def print_as_numbered_list(items):
-    pass  # TODO: replace this line with your code
+
+    i = 1
+
+    for item in items:
+        print(f'{i}.{item}')
+        i += 1
 
 
 def get_range(start, stop):
-    pass  # TODO: replace this line with your code
+
+    nums = []
+
+    for i in range(start, stop):
+        nums.append(i)
 
 
 def censor_vowels(word):
